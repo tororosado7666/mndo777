@@ -1,0 +1,52 @@
+[00:01:48] [Server thread/ERROR] [net.minecraft.network.protocol.PacketUtils]: Failed to handle packet net.minecraft.network.protocol.game.ServerboundUseItemOnPacket@3fc30f32, suppressing error
+java.lang.IllegalArgumentException: Cannot get property DirectionProperty{name=facing, clazz=class net.minecraft.core.Direction, values=[north, south, west, east]} as it does not exist in Block{minecraft:soul_torch}
+	at net.minecraft.world.level.block.state.StateHolder.m_61143_(StateHolder.java:98) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.level.ServerPlayer.m_7720_(ServerPlayer.java:1089) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.world.level.block.BedBlock.m_6227_(BedBlock.java:107) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.m_60664_(BlockBehaviour.java:779) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.level.ServerPlayerGameMode.m_7179_(ServerPlayerGameMode.java:478) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.m_6371_(ServerGamePacketListenerImpl.java:1553) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:34) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.m_5797_(ServerboundUseItemOnPacket.java:8) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.network.protocol.PacketUtils.m_263899_(PacketUtils.java:25) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.m_6367_(BlockableEventLoop.java:156) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.m_6367_(ReentrantBlockableEventLoop.java:23) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:1029) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_6367_(MinecraftServer.java:173) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.m_7245_(BlockableEventLoop.java:130) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_129961_(MinecraftServer.java:1012) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_7245_(MinecraftServer.java:1006) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.util.thread.BlockableEventLoop.m_18701_(BlockableEventLoop.java:139) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_130012_(MinecraftServer.java:992) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_130011_(MinecraftServer.java:908) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at net.minecraft.server.MinecraftServer.m_206580_(MinecraftServer.java:281) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+[00:04:30] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl]: facu776 lost connection: Disconnected
+[00:04:30] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: facu776 left the game
+[00:04:36] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl]: nano007 lost connection: Disconnected
+[00:04:36] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: nano007 left the game
+[00:04:56] [Server console handler/ERROR] [net.minecraft.server.dedicated.DedicatedServer]: Caught previously unhandled exception :
+java.io.IOError: java.io.IOException: Input/output error
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:170) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:110) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at org.jline.keymap.BindingReader.readBinding(BindingReader.java:61) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at org.jline.reader.impl.LineReaderImpl.doReadBinding(LineReaderImpl.java:923) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at org.jline.reader.impl.LineReaderImpl.readBinding(LineReaderImpl.java:956) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:651) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:468) ~[jline-reader-3.21.0.jar%23108!/:?]
+	at net.minecraftforge.server.console.TerminalHandler.handleCommands(TerminalHandler.java:46) ~[forge-1.20.1-47.2.20-universal.jar%23287!/:?]
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:93) ~[server-1.20.1-20230612.114412-srg.jar%23282!/:?]
+Caused by: java.io.IOException: Input/output error
+	at java.io.FileInputStream.read0(Native Method) ~[?:?]
+	at java.io.FileInputStream.read(FileInputStream.java:231) ~[?:?]
+	at org.jline.terminal.impl.AbstractPty$PtyInputStream.read(AbstractPty.java:73) ~[jline-terminal-3.21.0.jar%23109!/:?]
+	at org.jline.utils.NonBlockingInputStream.read(NonBlockingInputStream.java:62) ~[jline-terminal-3.21.0.jar%23109!/:?]
+	at org.jline.utils.NonBlocking$NonBlockingInputStreamReader.read(NonBlocking.java:168) ~[jline-terminal-3.21.0.jar%23109!/:?]
+	at org.jline.utils.NonBlockingReader.read(NonBlockingReader.java:57) ~[jline-terminal-3.21.0.jar%23109!/:?]
+	at org.jline.keymap.BindingReader.readCharacter(BindingReader.java:160) ~[jline-reader-3.21.0.jar%23108!/:?]
+	... 8 more
+[00:04:56] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[00:04:56] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving players
+[00:04:56] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[00:05:05] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
